@@ -1,4 +1,50 @@
-body {
+* {
   margin: 0;
-  font-family: Avenir;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+h1 {
+  margin: 0;
+}
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  font-size: 16px;
+  position: relative;
+  font-family: 'Rubik', sans-serif;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media(min-width: @screen-lg) and (-webkit-min-device-pixel-ratio: 1.2) {
+    font-size: 14px;
+  }
+}
+
+.container {
+  padding: 0 10px;
+  margin: 0 auto;
+  width: @screen-lg;
+  box-sizing: border-box;
+  @media(min-width: @screen-xs) {
+    width: 90%;
+    min-width: @screen-xs;
+  }
+  @media(min-width: @screen-sm) {
+    width: @screen-sm;
+  }
+  @media(min-width: @screen-md) {
+    width: @screen-md;
+  }
+  @media(min-width: @screen-lg) {
+    width: @screen-lg;
+  }
 }
